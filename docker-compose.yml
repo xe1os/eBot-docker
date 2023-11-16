@@ -11,6 +11,7 @@ services:
             - "eBotWebVolume:/app/eBot-CSGO-Web"
             - "./ebot-logs:/app/ebot-logs"
             - "./ebot-demos:/app/ebot-demos"
+            - "./etc/eBotWeb/app.yml:/app/eBot-CS2-Web/config/app.yml"
             - "./etc/eBotWeb/app_user.yml:/app/eBot-CSGO-Web/config/app_user.yml"
             - "./etc/eBotWeb/databases.yml:/app/eBot-CSGO-Web/config/databases.yml"
         depends_on:

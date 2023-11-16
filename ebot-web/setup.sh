@@ -5,7 +5,7 @@ if [ ! -f .installed ]; then
 
     git config --global http.sslverify false
 
-    git clone https://github.com/deStrO/eBot-CSGO-Web.git temp
+    git clone https://github.com/xe1os/eBot-CSGO-Web.git temp
 
     cp -n -R temp/* eBot-CSGO-Web && rm -rf temp
 

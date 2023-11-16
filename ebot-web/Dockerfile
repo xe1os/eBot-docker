@@ -8,7 +8,7 @@ RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.
 
 RUN apt-get update && apt-get install -y --force-yes git && apt-get clean
 
-RUN echo 'date.timezone = Europe/Paris' >> /usr/local/etc/php/conf.d/timezone.ini
+RUN echo 'date.timezone = Asia/Kolkata' >> /usr/local/etc/php/conf.d/timezone.ini
 
 COPY setup.sh .
 

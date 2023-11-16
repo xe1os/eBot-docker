@@ -3,7 +3,7 @@
 # Check if the .installed file exists
 if [ ! -f .installed ]; then
     
-    git clone https://github.com/deStrO/eBot-CSGO.git temp
+    git clone https://github.com/xe1os/eBot-CSGO.git temp
 
     cp -n -R temp/* eBot-CSGO && rm -rf temp
 

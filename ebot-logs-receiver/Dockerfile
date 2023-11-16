@@ -6,7 +6,7 @@ RUN npm install -g typescript ts-node
 
 WORKDIR /app
 
-RUN git clone https://github.com/deStrO/ebot-project.git
+RUN git clone https://github.com/xe1os/ebot-project.git
 
 WORKDIR /app/ebot-project
 

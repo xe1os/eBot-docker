@@ -22,6 +22,8 @@ sed -i "s/WEBSOCKET_SECRET_KEY =.*/WEBSOCKET_SECRET_KEY = \"$WEBSOCKET_SECRET_KE
 sed -i "s/REDIS_HOST =.*/REDIS_HOST = \"redis\"/g" ./etc/eBotSocket/config.ini
 sed -i "s/BOT_IP =.*/BOT_IP = \"0.0.0.0\"/g" ./etc/eBotSocket/config.ini
 
+echo "Patching ./etc/eBotWeb/app.yml"
+cp ./etc/eBotWeb/app.yml ./etc/eBotWeb/app.yml.bak
 
 echo "Patching ./etc/eBotWeb/app_user.yml"
 cp ./etc/eBotWeb/app_user.yml ./etc/eBotWeb/app_user.yml.bak

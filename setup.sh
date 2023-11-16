@@ -37,9 +37,10 @@ printf "This script will only configure the .env file. You must run or accept to
 
 if yesNo "Would you like to fresh the configs files by downloading recent configuration from github (main branch) ?"
 then
-  wget https://raw.githubusercontent.com/deStrO/eBot-CSGO-Web/master/config/app_user.yml.default -O ./etc/eBotWeb/app_user.yml
-  wget https://raw.githubusercontent.com/deStrO/eBot-CSGO-Web/master/config/databases.yml -O ./etc/eBotWeb/databases.yml
-  wget https://raw.githubusercontent.com/deStrO/eBot-CSGO/master/config/config.ini.smp -O ./etc/eBotSocket/config.ini
+  wget https://raw.githubusercontent.com/xe1os/eBot-CSGO-Web/master/config/app.yml -O ./etc/eBotWeb/app.yml
+  wget https://raw.githubusercontent.com/xe1os/eBot-CSGO-Web/master/config/app_user.yml.default -O ./etc/eBotWeb/app_user.yml
+  wget https://raw.githubusercontent.com/xe1os/eBot-CSGO-Web/master/config/databases.yml -O ./etc/eBotWeb/databases.yml
+  wget https://raw.githubusercontent.com/xe1os/eBot-CSGO/master/config/config.ini.smp -O ./etc/eBotSocket/config.ini
 fi
 
 function generatePassword() {
