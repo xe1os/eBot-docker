@@ -34,7 +34,7 @@ sed -i "s|websocket_secret_key:.*|websocket_secret_key: $WEBSOCKET_SECRET_KEY|" 
 sed -i "s|ebot_ip:.*|ebot_ip: $EBOT_IP|g" ./etc/eBotWeb/app_user.yml
 sed -i "s|websocket_url:.*|websocket_url: $WEBSOCKET_URL|g" ./etc/eBotWeb/app_user.yml
 
-echo "Patching ./etc/eBotWeb/database.yml"
+echo "Patching ./etc/eBotWeb/databases.yml"
 cp ./etc/eBotWeb/databases.yml ./etc/eBotWeb/databases.yml.bak
 sed -i "s|dsn:.*|dsn: \"mysql:host=mysqldb;dbname=${MYSQL_DATABASE}\"|" ./etc/eBotWeb/databases.yml
 sed -i "s|username:.*|username: ${MYSQL_USER}|" ./etc/eBotWeb/databases.yml
