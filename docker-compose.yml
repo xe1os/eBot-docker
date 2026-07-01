@@ -50,7 +50,7 @@ services:
     mysqldb:
         image: mysql:8.4
         restart: always
-        command: --mysql-native-passwords=ON
+        command: --mysql-native-password=ON
         environment:
             - MYSQL_DATABASE
             - MYSQL_ROOT_PASSWORD
